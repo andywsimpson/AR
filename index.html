@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Services Careers</title>
+    <style>
+        :root {
+            --primary-color: #121943;
+            --accent-color: rgb(231, 58, 17);
+            --dark-blue: rgb(18, 25, 67);
+            --text-color: #ffffff;
+            --background-color: #121943;
+        }
+
+        /* [Previous CSS styles remain the same] */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--dark-blue);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .hero {
+            padding: 120px 0 60px;
+            background: linear-gradient(45deg, var(--primary-color), var(--dark-blue));
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-color);
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 2rem;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: rgb(255, 68, 23);
+        }
+
+        .benefits {
+            padding: 80px 0;
+            background-color: var(--primary-color);
+        }
+
+        .benefits h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .benefit-card {
+            padding: 2rem;
+            border-radius: 8px;
+            background-color: var(--dark-blue);
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .positions {
+            padding: 80px 0;
+            background-color: var(--dark-blue);
+        }
+
+        .positions h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .position-card {
+            background-color: var(--primary-color);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .position-card h3 {
+            color: var(--text-color);
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: var(--dark-blue);
+            color: var(--text-color);
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 100px 0 40px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Add your logo here -->
+            <img src="/api/placeholder/150/50" alt="Financial Services Logo">
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Shape the Future of Finance</h1>
+            <p>Join a leading financial services firm where innovation meets expertise. We're seeking exceptional talent to drive our next phase of growth.</p>
+            <a href="#positions" class="cta-button">Explore Opportunities</a>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>Industry Leadership</h3>
+                    <p>Work with cutting-edge financial technology and contribute to major market innovations</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Professional Development</h3>
+                    <p>Access to premium certifications, continuous learning programs, and mentorship from industry experts</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Exceptional Benefits</h3>
+                    <p>Competitive compensation, performance bonuses, comprehensive healthcare, and retirement planning</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="positions" class="positions">
+        <div class="container">
+            <h2>Current Opportunities</h2>
+            <div class="position-card">
+                <h3>Senior Financial Analyst</h3>
+                <p>Lead complex financial modeling and analysis to drive strategic decision-making. Ideal candidates will have strong quantitative skills and 5+ years of experience in financial analysis.</p>
+                <a href="#" class="cta-button">Apply Now</a>
+            </div>
+            <div class="position-card">
+                <h3>Risk Management Specialist</h3>
+                <p>Develop and implement risk management strategies across our portfolio. Looking for experienced professionals with deep knowledge of market risk and regulatory requirements.</p>
+                <a href="#" class="cta-button">Apply Now</a>
+            </div>
+            <div class="position-card">
+                <h3>Investment Advisory Associate</h3>
+                <p>Join our client-facing team to provide sophisticated investment solutions. Seeking candidates with strong communication skills and relevant certifications.</p>
+                <a href="#" class="cta-button">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 [Your Financial Firm]. All rights reserved. | Authorized and regulated by relevant financial authorities</p>
+        </div>
+    </footer>
+</body>
+</html>
